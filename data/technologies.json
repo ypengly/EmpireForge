@@ -1,0 +1,10 @@
+{
+  "technologies": [
+    { "id": "improved_farming", "name": "Improved Farming", "category": "Agriculture", "cost": { "food": 200, "gold": 50 }, "researchTimeSeconds": 60, "requires": [], "effects": { "foodProductionMultiplier": 1.15 } },
+    { "id": "food_storage", "name": "Food Storage", "category": "Agriculture", "cost": { "wood": 150, "gold": 60 }, "researchTimeSeconds": 75, "requires": ["improved_farming"], "effects": { "foodStorageBonus": 1000 } },
+    { "id": "trade", "name": "Trade", "category": "Trade", "cost": { "gold": 120 }, "researchTimeSeconds": 75, "requires": ["improved_farming"], "effects": { "goldProductionMultiplier": 1.2 } },
+    { "id": "reinforced_tools", "name": "Reinforced Tools", "category": "Mining", "cost": { "wood": 200, "iron": 40 }, "researchTimeSeconds": 90, "requires": [], "effects": { "stoneProductionMultiplier": 1.15, "ironProductionMultiplier": 1.15 } },
+    { "id": "basic_smithing", "name": "Basic Smithing", "category": "Military", "cost": { "iron": 80, "gold": 40 }, "researchTimeSeconds": 100, "requires": [], "effects": { "unitAttackMultiplier": 1.1 } },
+    { "id": "fortification", "name": "Fortification", "category": "Defense", "cost": { "stone": 250, "iron": 60 }, "researchTimeSeconds": 100, "requires": [], "effects": { "wallHpMultiplier": 1.25 } }
+  ]
+}

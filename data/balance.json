@@ -1,0 +1,18 @@
+{
+  "world": { "tileSize": 48, "mapWidth": 60, "mapHeight": 45 },
+  "population": { "baseGrowthPerMinute": 3.0, "foodPerPopulationPerMinute": 0.25, "starvationPopulationLossPerMinute": 2.0 },
+  "economy": { "startingResources": { "food": 400, "wood": 350, "stone": 200, "iron": 80, "gold": 150 } },
+  "military": { "moraleBaseline": 75, "moraleVictoryGain": 10, "moraleDefeatLoss": 15, "retreatMoraleThreshold": 25 },
+  "combat": { "counterAttackBonus": 1.5 },
+  "territory": { "captureControlThreshold": 51, "controlGainPerGarrisonUnit": 0.5, "stabilityRecoveryPerMinute": 1.0 },
+  "ai": {
+    "decisionIntervalSeconds": 8,
+    "difficultyMultipliers": {
+      "easy":   { "resourceMultiplier": 0.8, "militaryMultiplier": 0.7, "aggressionMultiplier": 0.7 },
+      "normal": { "resourceMultiplier": 1.0, "militaryMultiplier": 1.0, "aggressionMultiplier": 1.0 },
+      "hard":   { "resourceMultiplier": 1.2, "militaryMultiplier": 1.25, "aggressionMultiplier": 1.2 },
+      "brutal": { "resourceMultiplier": 1.4, "militaryMultiplier": 1.5, "aggressionMultiplier": 1.4 }
+    }
+  },
+  "gameSpeed": { "normal": 1.0, "fast": 2.0, "veryFast": 4.0 }
+}

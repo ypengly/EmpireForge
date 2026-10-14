@@ -1,0 +1,13 @@
+{
+  "factions": [
+    { "id": "player", "name": "Player Kingdom", "isPlayer": true, "color": [70, 130, 220] },
+    { "id": "iron_kingdom", "name": "The Iron Kingdom", "isPlayer": false, "personality": "Military", "color": [180, 60, 60],
+      "behavior": { "priorities": ["military", "expansion", "aggression"], "aggressionLevel": 0.8, "expansionLevel": 0.6, "diplomacyLevel": 0.2 } },
+    { "id": "merchant_republic", "name": "The Merchant Republic", "isPlayer": false, "personality": "Economic", "color": [210, 180, 60],
+      "behavior": { "priorities": ["economy", "trade", "mercenaries"], "aggressionLevel": 0.2, "expansionLevel": 0.4, "diplomacyLevel": 0.8 } },
+    { "id": "forest_alliance", "name": "The Forest Alliance", "isPlayer": false, "personality": "Defensive", "color": [60, 150, 80],
+      "behavior": { "priorities": ["defense", "resources", "territory_protection"], "aggressionLevel": 0.15, "expansionLevel": 0.2, "diplomacyLevel": 0.5 } },
+    { "id": "nomad_tribes", "name": "The Nomad Tribes", "isPlayer": false, "personality": "Mobile", "color": [200, 130, 40],
+      "behavior": { "priorities": ["cavalry", "raiding", "mobility"], "aggressionLevel": 0.6, "expansionLevel": 0.3, "diplomacyLevel": 0.3 } }
+  ]
+}

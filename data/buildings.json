@@ -1,0 +1,61 @@
+{
+  "buildings": [
+    { "id": "town_center", "name": "Town Center", "category": "Population", "maxLevel": 3, "levels": [
+      { "level": 1, "cost": {}, "buildTimeSeconds": 0, "startsBuilt": true, "populationCapacity": 20 },
+      { "level": 2, "cost": { "wood": 400, "stone": 300 }, "buildTimeSeconds": 90, "populationCapacity": 35 },
+      { "level": 3, "cost": { "wood": 900, "stone": 700, "gold": 300 }, "buildTimeSeconds": 180, "populationCapacity": 55 } ] },
+    { "id": "farm", "name": "Farm", "category": "Economy", "maxLevel": 3, "levels": [
+      { "level": 1, "cost": { "wood": 60 }, "buildTimeSeconds": 20, "workerSlots": 4, "production": { "food": 6 } },
+      { "level": 2, "cost": { "wood": 150, "stone": 40 }, "buildTimeSeconds": 45, "workerSlots": 6, "production": { "food": 11 } },
+      { "level": 3, "cost": { "wood": 320, "stone": 120 }, "buildTimeSeconds": 90, "workerSlots": 8, "production": { "food": 18 } } ] },
+    { "id": "lumber_camp", "name": "Lumber Camp", "category": "Economy", "maxLevel": 3, "levels": [
+      { "level": 1, "cost": { "wood": 50 }, "buildTimeSeconds": 20, "workerSlots": 4, "production": { "wood": 5 } },
+      { "level": 2, "cost": { "wood": 140, "stone": 40 }, "buildTimeSeconds": 45, "workerSlots": 6, "production": { "wood": 9 } },
+      { "level": 3, "cost": { "wood": 300, "stone": 100 }, "buildTimeSeconds": 90, "workerSlots": 8, "production": { "wood": 15 } } ] },
+    { "id": "quarry", "name": "Stone Quarry", "category": "Economy", "maxLevel": 3, "levels": [
+      { "level": 1, "cost": { "wood": 70 }, "buildTimeSeconds": 25, "workerSlots": 4, "production": { "stone": 4 } },
+      { "level": 2, "cost": { "wood": 160, "stone": 50 }, "buildTimeSeconds": 50, "workerSlots": 6, "production": { "stone": 8 } },
+      { "level": 3, "cost": { "wood": 340, "stone": 140 }, "buildTimeSeconds": 95, "workerSlots": 8, "production": { "stone": 13 } } ] },
+    { "id": "iron_mine", "name": "Iron Mine", "category": "Economy", "maxLevel": 3, "requiresTerrain": "iron_deposit", "levels": [
+      { "level": 1, "cost": { "wood": 120, "stone": 60 }, "buildTimeSeconds": 40, "workerSlots": 4, "production": { "iron": 3 } },
+      { "level": 2, "cost": { "wood": 260, "stone": 140 }, "buildTimeSeconds": 70, "workerSlots": 6, "production": { "iron": 6 } },
+      { "level": 3, "cost": { "wood": 500, "stone": 300, "gold": 150 }, "buildTimeSeconds": 130, "workerSlots": 8, "production": { "iron": 10 } } ] },
+    { "id": "gold_mine", "name": "Gold Mine", "category": "Economy", "maxLevel": 3, "requiresTerrain": "gold_deposit", "levels": [
+      { "level": 1, "cost": { "wood": 150, "stone": 80 }, "buildTimeSeconds": 50, "workerSlots": 4, "production": { "gold": 2 } },
+      { "level": 2, "cost": { "wood": 320, "stone": 180 }, "buildTimeSeconds": 90, "workerSlots": 6, "production": { "gold": 4 } },
+      { "level": 3, "cost": { "wood": 600, "stone": 380, "iron": 100 }, "buildTimeSeconds": 160, "workerSlots": 8, "production": { "gold": 7 } } ] },
+    { "id": "house", "name": "House", "category": "Population", "maxLevel": 2, "levels": [
+      { "level": 1, "cost": { "wood": 40 }, "buildTimeSeconds": 15, "populationCapacity": 8 },
+      { "level": 2, "cost": { "wood": 90, "stone": 30 }, "buildTimeSeconds": 35, "populationCapacity": 14 } ] },
+    { "id": "storage", "name": "Storage", "category": "Economy", "maxLevel": 3, "levels": [
+      { "level": 1, "cost": {}, "buildTimeSeconds": 0, "startsBuilt": true, "storageCapacity": { "wood": 1000, "stone": 1000, "iron": 500, "gold": 500 } },
+      { "level": 2, "cost": { "wood": 200, "stone": 120 }, "buildTimeSeconds": 60, "storageCapacity": { "wood": 2200, "stone": 2200, "iron": 1200, "gold": 1200 } },
+      { "level": 3, "cost": { "wood": 450, "stone": 300 }, "buildTimeSeconds": 120, "storageCapacity": { "wood": 5000, "stone": 5000, "iron": 3000, "gold": 3000 } } ] },
+    { "id": "granary", "name": "Granary", "category": "Economy", "maxLevel": 2, "levels": [
+      { "level": 1, "cost": { "wood": 100 }, "buildTimeSeconds": 30, "storageCapacity": { "food": 2000 } },
+      { "level": 2, "cost": { "wood": 220, "stone": 80 }, "buildTimeSeconds": 60, "storageCapacity": { "food": 5000 } } ] },
+    { "id": "barracks", "name": "Barracks", "category": "Military", "maxLevel": 3, "levels": [
+      { "level": 1, "cost": { "wood": 90, "stone": 30 }, "buildTimeSeconds": 35, "unlocks": ["infantry", "spearman"] },
+      { "level": 2, "cost": { "wood": 220, "stone": 120, "iron": 60 }, "buildTimeSeconds": 70, "unlocks": ["heavy_infantry"] },
+      { "level": 3, "cost": { "wood": 400, "stone": 260, "iron": 150 }, "buildTimeSeconds": 130 } ] },
+    { "id": "archery_range", "name": "Archery Range", "category": "Military", "maxLevel": 2, "levels": [
+      { "level": 1, "cost": { "wood": 130, "stone": 20 }, "buildTimeSeconds": 40, "unlocks": ["archer"] },
+      { "level": 2, "cost": { "wood": 280, "stone": 100 }, "buildTimeSeconds": 80 } ] },
+    { "id": "stable", "name": "Stable", "category": "Military", "maxLevel": 2, "levels": [
+      { "level": 1, "cost": { "wood": 160, "stone": 40 }, "buildTimeSeconds": 45, "unlocks": ["cavalry"] },
+      { "level": 2, "cost": { "wood": 320, "stone": 140 }, "buildTimeSeconds": 90 } ] },
+    { "id": "siege_workshop", "name": "Siege Workshop", "category": "Military", "maxLevel": 2, "levels": [
+      { "level": 1, "cost": { "wood": 300, "iron": 120 }, "buildTimeSeconds": 90, "unlocks": ["battering_ram"] },
+      { "level": 2, "cost": { "wood": 600, "iron": 300, "gold": 150 }, "buildTimeSeconds": 160, "unlocks": ["trebuchet"] } ] },
+    { "id": "wall", "name": "Wall", "category": "Defense", "maxLevel": 3, "levels": [
+      { "level": 1, "cost": { "stone": 60 }, "buildTimeSeconds": 20, "hp": 400 },
+      { "level": 2, "cost": { "stone": 150, "iron": 30 }, "buildTimeSeconds": 45, "hp": 900 },
+      { "level": 3, "cost": { "stone": 320, "iron": 100 }, "buildTimeSeconds": 90, "hp": 1800 } ] },
+    { "id": "watch_tower", "name": "Watch Tower", "category": "Defense", "maxLevel": 2, "levels": [
+      { "level": 1, "cost": { "wood": 80, "stone": 60 }, "buildTimeSeconds": 30, "hp": 300, "attack": 8, "range": 6 },
+      { "level": 2, "cost": { "wood": 160, "stone": 140, "iron": 40 }, "buildTimeSeconds": 60, "hp": 600, "attack": 15, "range": 8 } ] },
+    { "id": "library", "name": "Library", "category": "Technology", "maxLevel": 2, "levels": [
+      { "level": 1, "cost": { "wood": 150, "stone": 60 }, "buildTimeSeconds": 45, "researchSlots": 1 },
+      { "level": 2, "cost": { "wood": 320, "stone": 160, "gold": 100 }, "buildTimeSeconds": 90, "researchSlots": 2 } ] }
+  ]
+}

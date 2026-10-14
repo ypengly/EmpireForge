@@ -1,0 +1,11 @@
+{
+  "units": [
+    { "id": "infantry", "name": "Infantry", "type": "Infantry", "health": 100, "attack": 12, "defense": 10, "range": 1, "speed": 2.0, "attackSpeed": 1.0, "foodConsumption": 1.0, "trainingCost": { "food": 40, "iron": 10 }, "trainingTimeSeconds": 15, "counters": [], "counteredBy": ["archer", "spearman"] },
+    { "id": "spearman", "name": "Spearman", "type": "Infantry", "health": 85, "attack": 10, "defense": 8, "range": 1, "speed": 2.0, "attackSpeed": 1.0, "foodConsumption": 1.0, "trainingCost": { "food": 35, "iron": 8 }, "trainingTimeSeconds": 14, "counters": ["cavalry"], "counterBonus": 2.0, "counteredBy": ["archer"] },
+    { "id": "archer", "name": "Archer", "type": "Ranged", "health": 60, "attack": 14, "defense": 3, "range": 5, "speed": 2.0, "attackSpeed": 0.9, "foodConsumption": 1.2, "trainingCost": { "food": 45, "wood": 15 }, "trainingTimeSeconds": 16, "counters": ["infantry", "heavy_infantry"], "counteredBy": ["cavalry"] },
+    { "id": "cavalry", "name": "Cavalry", "type": "Cavalry", "health": 130, "attack": 16, "defense": 8, "range": 1, "speed": 4.5, "attackSpeed": 1.1, "foodConsumption": 2.0, "trainingCost": { "food": 70, "iron": 20, "gold": 10 }, "trainingTimeSeconds": 25, "counters": ["archer"], "counteredBy": ["spearman"] },
+    { "id": "heavy_infantry", "name": "Heavy Infantry", "type": "Infantry", "health": 180, "attack": 18, "defense": 18, "range": 1, "speed": 1.5, "attackSpeed": 0.8, "foodConsumption": 2.2, "trainingCost": { "food": 90, "iron": 40, "gold": 15 }, "trainingTimeSeconds": 35, "counters": ["infantry", "spearman"], "counteredBy": ["siege"] },
+    { "id": "battering_ram", "name": "Battering Ram", "type": "Siege", "health": 220, "attack": 40, "defense": 4, "range": 1, "speed": 1.0, "attackSpeed": 0.5, "foodConsumption": 0.0, "trainingCost": { "wood": 150, "iron": 60 }, "trainingTimeSeconds": 45, "counters": [], "counteredBy": ["cavalry"] },
+    { "id": "trebuchet", "name": "Trebuchet", "type": "Siege", "health": 150, "attack": 60, "defense": 2, "range": 7, "speed": 0.7, "attackSpeed": 0.3, "foodConsumption": 0.0, "trainingCost": { "wood": 260, "iron": 100, "gold": 40 }, "trainingTimeSeconds": 70, "counters": [], "counteredBy": ["cavalry"] }
+  ]
+}
